@@ -1,0 +1,492 @@
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(r1.jpg) ;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.header-content{
+   display: flex;
+   flex-direction: column;
+    color:white;
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.decoratives-colomn-1,.decoratives-colomn-2{
+    
+    position: absolute;
+    top: 20%; 
+    width: 17vw;
+    height: 65vh;
+}
+.decoratives-colomn-1{
+    left: 7%;
+}
+.decoratives-colomn-2{
+    position: absolute;
+    right: 5%; 
+    
+}
+
+
+.decor-1{
+    position: relative;
+    width: 10rem;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    height: 7rem;
+    box-shadow: 0px 5px 5px rgba(65, 65, 65, 0.7);
+    z-index: 1;
+    transition: width 0.5s,height 0.5s;
+    
+}
+.decor-1:hover{
+    width: 13rem;
+    height: 10rem;
+    z-index: 10;
+}
+
+#decorid-1{
+    position: relative;
+    top: -7.5vh;
+    left: 10.5vh;
+}
+
+#decorid-2{
+    position: relative;
+    top:-13.5vh ;
+
+}
+#decorid-3{
+    position: relative;
+    top: -19.5vh;
+    left: 10.5vh;
+    
+}
+
+.decoratives-colomn-2 .decor-1 {
+    left: 10.5vh;
+}
+.decoratives-colomn-2 #decorid-1 {
+    left: 0vh;
+}
+.decoratives-colomn-2 #decorid-3 {
+    left: 0vh;
+}
+.header-content h1,.header-content h2 {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background:blueviolet;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+ul{
+    list-style: none;
+}
+.ctn{
+    padding: 8px 15px;
+    background: blueviolet;
+    border-radius: 30px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+.navdiv{
+    display: flex;
+    
+}
+.navbar{
+    display: flex;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+.suggestionbar{
+    margin-top: 1%;
+    background-image: linear-gradient( to right bottom,rgb(179, 114, 241) 30%,cyan);
+    padding-bottom: 5%;
+    width: 100vw;
+
+}
+.suggestions{
+    text-align: center;
+}
+.suggesticon{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-top: 0px;
+    
+}
+.places{
+    margin-left: 5%;
+    
+}
+#placeid-1{
+    color: rgb(105, 52, 155);
+}
+.heading,h3{
+    
+    color: blueviolet;
+}
+p{
+    color: white;
+}
+.place-1{
+    margin-top: 50px;
+}
+
+.place-info{
+    margin-top: 30px;
+    display: flex;
+    width: 80%; 
+}
+
+.place-subinfo{
+    margin-left: 5%;
+    font-size: 10px;
+    
+}
+.placeimg-1{
+    display: flex;
+   
+    margin-left: 30%;
+    border:none;
+    align-items: center; 
+}
+
+.img-1{
+    
+    width: 20rem;
+    border-radius: 5%;
+    box-shadow: 1px 5px 5px rgba(110, 64, 152, 0.7);
+    cursor: pointer;
+    transition: width 0.5s ;
+}
+.img-1:hover{
+    width: 24rem;  
+}
+
+.info-bar{
+    display: flex;
+    align-items: center;
+    margin-left: -2%;
+}
+.info-bar li{
+    margin-left: 2%;
+    margin-top:7%;
+    
+}
+.options{
+    width: 6rem;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right ,rgb(159, 83, 231),rgb(43, 110, 226));
+    transition: font-size 0.4s,margin 0.4s;
+}
+.options:hover{
+    font-size: 13px;
+    margin-bottom: 0px;
+
+}
+
+
+/*media queries*/
+@media (max-width:900px){
+    .img-1{
+        width: 12rem;
+        margin-left: -60%;
+    }
+    .img-1:hover{
+        width: 14rem;
+    }
+    .decoratives-colomn-2{
+        top: 10%;
+        
+    }
+    header{
+        width: 120vw;
+        height: 100vh;
+    }
+    .decoratives-colomn-1{
+        top: 10%;
+        left: 11%;
+    }
+    .suggestionbar{
+        width: 120vw;
+    }
+    .decoratives-colomn-2{
+        right: 2%;
+    }
+
+}
+
+@media(max-width:780px){
+    header{
+        width: 100vw;
+        height: 100vh;
+    }
+    .header-content{
+        margin-bottom: 50px;
+    }
+   
+    .suggestionbar{
+        width: 100%;
+        height: 100%;
+    }
+    .suggesticon{
+        width: 100%;
+    }
+    .place-subinfo{
+        width: 65%;
+    }
+    .placeimg-1{
+        margin-left: 5%;
+        margin-top: -10%;
+    }
+    .img-1{
+        margin: 0px;
+        width: 15rem;
+    }
+    .img-1:hover{
+        width: 17rem;
+    }
+    
+    .decor-1{
+        width: 8rem;
+        height: 6rem;
+    }
+    .decoratives-colomn-1{
+        top: 13%;
+        left: 13%;
+    }
+    .decoratives-colomn-2{
+        top: 13%;
+        right: 26%;
+    }
+}
+@media (max-width:720px){
+    header{
+        width: 100vw;
+        height: 100vh;
+    }
+    .img-1{
+        width: 12rem;
+    }
+    .img-1:hover{
+        width: 14rem;
+    }
+   
+    .suggestionbar{
+        width: 100%;
+        height: 100%;
+    }
+    .suggesticon{
+        width: 100%;
+    }
+    .place-subinfo{
+        width: 65%;
+    }
+    .placeimg-1{
+        margin-left: 10%;
+        margin-top: -10%;
+    }
+    .decor-1{
+        width: 8rem;
+        height: 6rem;
+    }
+    .decor-1:hover{
+        width: 10rem;
+        height: 7rem;
+    }
+    .decoratives-colomn-1{
+        left: 13%;
+    }
+    .decoratives-colomn-1,.decoratives-colomn-2{
+        top: 15%;
+    }
+    .decoratives-colomn-2{
+        right: 30% ;
+    }
+
+    .header-content h1{
+        margin-top:5%;
+    }
+    .nav-links li{
+        margin: 0px 10px;
+    }
+    .navdiv{
+         margin:  auto;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .logo{
+        display: flex;
+        margin-left: 40%;
+    }
+
+    .nav-links{
+        margin-top: 5%;
+    }
+}
+@media (max-width:560px) {
+    header{
+        height: 100vh;
+    }
+    .info-bar{
+        flex-wrap: wrap;
+        width: 70vw;
+    }
+    .img-1{
+        width: 10rem;
+    }
+    .img-1:hover{
+        width: 11rem;
+    }
+    .decoratives-colomn-1{
+        left:4% ;
+        top: 15%;
+    }
+    .decoratives-colomn-2{
+        right: 30%;
+        top: 15%;
+    }
+  
+}
+@media (max-width:480px){
+    header{
+        height: 100vh;
+    }
+    .info-bar{
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+    .place-info{
+        flex-direction: column;
+    }
+    .place-subinfo{
+        width: 100%;
+    }
+    .placeimg-1{
+        margin-top: 10%;
+        margin-left: 15px;
+    }
+    .img-1{
+        width: 15rem;
+    }
+    .img-1:hover{
+        width: 16rem;
+    }
+    .logo{
+        margin: auto;
+    }
+    .decoratives-colomn-1{
+        top: 15%;
+        width: 40%;
+        height: 35%;
+        left: 10%;
+    }
+    .decoratives-colomn-2{
+        
+        top: 37%;
+       right: 22%;
+        width: 40%;
+        height: 20%;   
+    }
+    .header-content{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:400px){
+    .decoratives-colomn-2{
+        top: 37%;
+        right: 20%;
+    }
+    .decoratives-colomn-1{
+        left: 5%;
+    }
+}
+@media (max-width:360px){
+    .decoratives-colomn-2{
+        top: 25vh;
+        right: 15%;
+    }
+    .decoratives-colomn-1{
+        left: 4%;
+        top: 25vh;
+        
+    }
+    .decor-1{
+        width: 4rem;
+        height: 3rem ;
+        margin: 25px;
+    }
+    .nav-links{
+        flex-direction: column;
+        line-height: 30px;
+    }
+    header{
+        height: 100vh;
+    }
+}
+
+@media (max-width:320px){
+    .decoratives-colomn-1{
+        left: 0%;
+    }
+    .decoratives-colomn-2{
+        right: 17%;
+    }
+
+}
